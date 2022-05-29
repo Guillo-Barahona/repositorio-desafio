@@ -1,3 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #3795f3;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: white solid 10px;
+}
+
+h1{
+    color: white;
+}
+
 body {
     background-color: #232425;
+    justify-content: center;
+    align-items: center;
 }
+
+.contenedor {
+    background-color: #242526;
+    padding: 30px 30px;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    background-color: #252627;
+    padding: 20px;
+    margin: 20px;
+    height: 60vh;
+    width: auto;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.sq5 {
+    background-color: #252627;
+    visibility: hidden
+
+}
+
+.grid div p {
+    background-color: tomato;
+    padding: 0px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    color: transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* creamos la animacion */
+@keyframes efecto-carga {
+    0% {
+        background: tomato;
+        opacity: 1;
+    }
+    50% {
+        background: #3795f3;
+        width: 105px;
+        height: 105px;
+        opacity: 1;
+    }
+    100% {
+        background: #252627;
+        opacity: 1;
+    }
+}
+
+
+.sq1 {
+    animation: efecto-carga 1800ms linear 225ms infinite ;
+}
+.sq2 {
+    animation: efecto-carga 1800ms linear 450ms infinite ;
+}
+.sq3 {
+    animation: efecto-carga 1800ms linear 675ms infinite ;
+}
+.sq6 {
+    animation: efecto-carga 1800ms linear 900ms infinite ;
+}
+.sq9 {
+    animation: efecto-carga 1800ms linear 1125ms infinite ;
+}
+.sq8 {
+    animation: efecto-carga 1800ms linear 1350ms infinite ;
+}
+.sq7 {
+    animation: efecto-carga 1800ms linear 1575ms infinite ;
+}
+.sq4 {
+    animation: efecto-carga 1800ms linear 1800ms infinite ;
+}
+
+
